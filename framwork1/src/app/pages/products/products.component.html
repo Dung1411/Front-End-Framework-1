@@ -18,18 +18,20 @@
         </thead>
     
         <tbody>
-            <tr *ngFor="let product of productList; let i = index">
+            <tr *ngFor="let product of data; let i = index">
                 <td>{{i+1}}</td>
                 <td>{{product.name}}</td>
                 <td>{{product.price}}</td>
                 <td>{{product.status? "Còn hàng" : "Hết hàng"}} </td>
                 <td>
                     <button class="btn btn-danger" (click)="onHandleDelete(product.id)">Delete</button>
+                    <button class="btn btn-danger" (click)="onHandleDetail(product)">Detail</button>
+
                 </td>
             </tr>
         </tbody>
     </table>
 </div>
-
+<app-product-detail [data] = "isProduct"></app-product-detail>
 <h2>{{componentName}}</h2>
 <!-- component là logic từ view đồng bộ về logic -->

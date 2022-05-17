@@ -7,6 +7,9 @@ import { HelloComponent } from './components/hello/hello.component';
 import { ProductsComponent } from './pages/products/products.component';
 import { AboutComponent } from './components/about/about.component';
 import { FormsModule } from '@angular/forms';
+import { ProductDetailComponent } from './pages/product-detail/product-detail.component';
+import { HomePageComponent } from './pages/home-page/home-page.component';
+import { ManagerProductComponent } from './pages/manager-product/manager-product.component';
 
 
 @NgModule({
@@ -14,7 +17,10 @@ import { FormsModule } from '@angular/forms';
     AppComponent,
     HelloComponent,
     ProductsComponent,
-    AboutComponent
+    AboutComponent,
+    ProductDetailComponent,
+    HomePageComponent,
+    ManagerProductComponent
   ],
   imports: [
     BrowserModule,
