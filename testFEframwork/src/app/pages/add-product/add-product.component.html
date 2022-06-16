@@ -1,0 +1,6 @@
+<form (ngSubmit)="onSubmit()" #formAdd="ngForm" >
+    <input [(ngModel)]="product.name" type="text" placeholder="Name" name="name">
+    <input [(ngModel)]="product.price"  type="number" placeholder="Price" name="price">
+    <input [(ngModel)]="product.img"  type="text" placeholder="img" name="img">
+    <button type="submit">submit</button>
+</form>

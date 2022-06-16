@@ -1,0 +1,40 @@
+.custom-container{
+   width: 1152px;
+    margin: 0 auto;
+    padding: 0 5px;
+}
+.text-detail{
+    // text-[30px] font-bold md:text-[34px] md:leading-[50px] leading-[40px] md:pb-[25px] pb-[13px]
+    font-size: 34px;
+    width: 500px;
+    color: #21243D;
+}
+.time-detail{
+    padding: 5px 10px;
+    border-radius: 9999px;
+    background-color: #FF7C7C;
+    font-size: 18px;
+    color: white;
+    margin-right: 27px;
+}
+.tool-detail{
+    color: #21243D;
+    font-size: 20px;
+}
+.text{
+    font-size: 18px;
+    width: 800px;
+    margin: 23px 0  46px 0;
+    color: black;
+}
+img{
+    width: 850px;
+    height: 560px;
+}
+h1{
+    color: #21243D;
+    margin-top: 54px;
+}
+.anh{
+    margin-bottom: 20px;
+}

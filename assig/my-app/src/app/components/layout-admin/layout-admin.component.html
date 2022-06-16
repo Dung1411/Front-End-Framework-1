@@ -1,0 +1,50 @@
+<nz-layout>
+    <nz-sider nzCollapsible nzWidth="200px">
+        <div class="logo">
+            <img src="https://i.pinimg.com/236x/d5/fe/16/d5fe169372b70f9569bad8c7acc992e4.jpg" alt="" height="100px" width="290px">
+        </div>
+        <ul nz-menu nzTheme="dark" nzMode="inline">
+            <li nz-menu-item>
+                <a routerLink="/">
+                    <i nz-icon nzType="pie-chart"></i>
+                    <span>Home page</span>
+                </a>
+            </li>
+            <li nz-submenu nzTitle="Project" nzIcon="dingtalk">
+                <ul>
+                    <a routerLink="project/list">
+                        <li nz-menu-item>List projects</li>
+                    </a>
+                    <a routerLink="project/add">
+                        <li nz-menu-item>Add projects</li>
+                    </a>
+                </ul>
+            </li>
+            <li nz-submenu nzTitle="Posts" nzIcon="desktop">
+                <ul>
+                    <a routerLink="posts/list">
+                        <li nz-menu-item>List Posts</li>
+                    </a>
+                    <a routerLink="posts/add">
+                        <li nz-menu-item>Add Posts</li>
+                    </a>
+                </ul>
+            </li>
+            
+        </ul>
+    </nz-sider>
+    <nz-layout>
+        <nz-header></nz-header>
+        <nz-content>
+            <nz-breadcrumb>
+                <h3>Admin</h3>
+            </nz-breadcrumb>
+            <div class="inner-content">
+                <div class="container">
+                    <router-outlet></router-outlet>
+                </div>
+            </div>
+        </nz-content>
+        <nz-footer>Ant Design ©2020 Implement By Angular</nz-footer>
+    </nz-layout>
+</nz-layout>

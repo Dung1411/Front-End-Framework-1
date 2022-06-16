@@ -1,0 +1,37 @@
+<h1>List Project</h1>
+<div>
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Name</th>
+                <th>Tool</th>
+                <th>Img</th>
+                <th>Link</th>
+                <th>Desc</th>
+                <th>Act</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let posts of data">
+                <td>{{posts.id}}</td>
+                <td>{{posts.name}}</td>
+                <td>{{posts.tool}}</td>
+                <td>
+                    <img src={{posts.img}} width="200px"/>
+                </td>
+                <td>{{posts.link}}</td>
+                <td>{{posts.desc}}</td>
+                <td>
+                    <button class="btn btn-danger bg-black border-0" (click)="onHandleClick(posts.id!)">Delete</button>
+                    <button class="btn btn-success mt-2 bg-black border-0" >
+                        <a class="text-white" routerLink="/admin/project/{{posts.id}}/edit">Update</a>
+                    </button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div>
+    </div>
+</div>

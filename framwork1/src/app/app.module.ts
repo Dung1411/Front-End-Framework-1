@@ -4,30 +4,44 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HelloComponent } from './components/hello/hello.component';
-import { ProductsComponent } from './pages/products/products.component';
 import { AboutComponent } from './components/about/about.component';
+import { ProductsComponent } from './components/products/products.component';
 import { FormsModule } from '@angular/forms';
-import { ProductDetailComponent } from './pages/product-detail/product-detail.component';
-import { HomePageComponent } from './pages/home-page/home-page.component';
-import { ManagerProductComponent } from './pages/manager-product/manager-product.component';
+import { ProductAddComponent } from './components/product-add/product-add.component';
+import { ProductDetailComponent } from './components/product-detail/product-detail.component';
+import { HttpClientModule } from '@angular/common/http';
+import { NotFoundComponent } from './pages/not-found/not-found.component';
+import { HomeComponent } from './pages/home/home.component';
+import { NZ_I18N } from 'ng-zorro-antd/i18n';
+import { en_US } from 'ng-zorro-antd/i18n';
+import { registerLocaleData } from '@angular/common';
+import en from '@angular/common/locales/en';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HeaderComponent } from './components/header/header.component'
+import { NzMenuModule } from 'ng-zorro-antd/menu';
 
-
+registerLocaleData(en);
 @NgModule({
   declarations: [
     AppComponent,
     HelloComponent,
-    ProductsComponent,
     AboutComponent,
+    ProductsComponent,
+    ProductAddComponent,
     ProductDetailComponent,
-    HomePageComponent,
-    ManagerProductComponent
+    NotFoundComponent,
+    HomeComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule,
+    BrowserAnimationsModule,
+    NzMenuModule
   ],
-  providers: [],
+  providers: [{ provide: NZ_I18N, useValue: en_US }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

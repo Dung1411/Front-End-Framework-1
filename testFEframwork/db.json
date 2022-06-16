@@ -1,0 +1,22 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "san pham 1",
+      "price": 30,
+      "img": "https://i.pinimg.com/236x/c6/2b/9b/c62b9bd39e610ccca964f1a2b8b9b416.jpg"
+    },
+    {
+      "name": "san pham 2",
+      "price": 2233,
+      "img": "https://i.pinimg.com/236x/48/41/27/4841276f269b8facc1200645d8d552e5.jpg",
+      "id": 2
+    },
+    {
+      "name": "san pham new",
+      "price": 123,
+      "img": "https://i.pinimg.com/236x/80/49/85/804985a5b8dbbd52849857c7b97772a9.jpg",
+      "id": 3
+    }
+  ]
+}

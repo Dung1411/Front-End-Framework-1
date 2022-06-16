@@ -1,0 +1,22 @@
+<div class="containerr">
+    <div class="main">
+        <div class="content">
+            <div class="content-header">
+                <h4 class="content-header__title">Recent posts</h4>
+                <a routerLink="/blog">View all</a>
+            </div>
+            <div class="content-header__main">
+                <div class="content-header__item" *ngFor="let item of data">
+                    <h3 class="content-item__title">{{item.name}}</h3>
+                    <div class="content-item__properties">
+                        <span class="date">{{ item.createAt | date:'d MMM y' }}</span>
+                        <span class="tool">Design, Pattern</span>
+                    </div>
+                    <span class="desc">
+                        {{item.descShort}}
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
